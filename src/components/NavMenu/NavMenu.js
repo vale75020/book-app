@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import "./NavLink.css";
-import NavLink from "./NavLink";
+// import NavLink from "./NavLink";
+
+function NavLink(props) {  // stateless functional component
+  return (
+    <a href={props.info.url} className="main-link">{props.info.label}</a>
+  )
+}
 
 export default class NavMenu extends Component {
   render() {
